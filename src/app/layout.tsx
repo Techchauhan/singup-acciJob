@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { ConfigProvider } from "antd"; // Import ConfigProvider
 import "./globals.css";
 
 const geistSans = localFont({
@@ -28,7 +29,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/* Wrap the children with ConfigProvider for Ant Design */}
+        <ConfigProvider>
+          {children}
+        </ConfigProvider>
       </body>
     </html>
   );
