@@ -32,8 +32,8 @@ const SignupPage: React.FC = () => {
   };
 
   return (
-    <Watermark content="Developer by AcciJob Student">
-      <div className="min-h-screen bg-gradient-to-r from-purple-400 to-indigo-600 flex items-center justify-center relative">
+    <Watermark content="Developed by AcciJob Student">
+      <div className="min-h-screen bg-gradient-to-r from-purple-400 to-indigo-800 flex items-center justify-center relative">
         <div className="bg-white pl-5 pr-5 pt-1 rounded-lg shadow-lg w-full max-w-lg z-10 relative">
          
           <div className="flex justify-center mb-2">
@@ -47,11 +47,10 @@ const SignupPage: React.FC = () => {
           </div>
 
           <h2 className="text-3xl font-bold text-gray-800 text-center">Create Your Account</h2>
-          <p className="text-gray-600 text-center">Developer by AcciJob Student</p>
+          <p className="text-gray-600 text-center">Developed by AcciJob Student</p>
 
           <Form
             form={form}
-            layout="vertical"
             onFinish={handleFinish}
             onFinishFailed={handleFinishFailed}
           >
